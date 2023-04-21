@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
+  width: 760px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  padding: 96px 98px 92px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form__element {
+  margin-bottom: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form__label {
+  margin-bottom: 8px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666666;
+  display: block;
+}
+
+.form__input {
+  width: 564px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.form__input-description {
+  color: #666666;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form__text span {
+  color: #eb5757;
+}
+
+.form__remember input,
+.form__radio input,
+.form__on input {
+  margin-right: 16px;
+}
+
+.form__remember label,
+.form__on label,
+.form__radio label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.form__radio-list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__radio-list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.form__dropdown select {
+  width: 564px;
+  height: 56px;
+  background: #ffffff;
+  /* Keatext purple */
+
+  border: 2px solid #7a5cfa;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.form__dropdown option {
+  width: 564px;
+  height: 56px;
+
+  /* Keatext purple */
+
+  /* background: #7a5cfa; */
+  border: 1px solid #cccccc;
+}
+
+.form__buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.form__buttons input {
+  width: 172px;
+  height: 56px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #7a5cfa;
+  color: #7a5cfa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__buttons input:last-child {
+  border: none;
+  color: #fff;
+  background: #7a5cfa;
 }
