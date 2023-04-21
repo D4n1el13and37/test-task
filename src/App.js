@@ -23,6 +23,7 @@ function App() {
       password: "",
       text: "",
       remember: false,
+      isOn: false,
       radioSelection: "Radio Selection 2",
       dropDown: "Option_1",
     });
@@ -35,6 +36,7 @@ function App() {
     alert(formData);
   };
 
+  //функция для изменения состояния
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormState((prevState) => ({
